@@ -18,7 +18,7 @@ const NavBar = () => {
                     How we work
                 </li>
                 <li className=" text-neutral-600 text-2xl leading-normal tracking-wide">
-                    About
+                    Contact
                 </li>
             </ul>
             <button className="w-[127px] h-[48px] rounded-full flex justify-center items-center bg-primary text-white">
