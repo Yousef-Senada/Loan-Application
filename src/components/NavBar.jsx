@@ -2,7 +2,7 @@ import React from "react";
 
 const NavBar = () => {
     return (
-        <nav className="h-[82px] px-[98px] font-DMSans flex justify-between items-center">
+        <nav className="h-[92px] px-[98px] font-DMSans flex justify-between items-center">
             <div className="flex justify-start text-3xl font-bold leading-normal tracking-tight w-[175px]">
                 <span className="text-teal-900">Quick</span>
                 <span className="text-green-500">Funds</span>
