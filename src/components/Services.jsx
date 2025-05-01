@@ -24,7 +24,7 @@ const service = [
 
 const Services = () => {
     return (
-        <section className="h-[613px] bg-gradient-to-br from-emerald-50 via-slate-300/50 to-zinc-200/0 px-[125px] flex flex-col justify-evenly items-center">
+        <section className="h-[613px] bg-gradient-to-br from-emerald-100 via-slate-300/50 to-zinc-200/0 px-[125px] flex flex-col justify-evenly items-center">
             <p className="text-4xl text-primary font-bold font-Raleway leading-[55px] tracking-wide">
                 Our Services
             </p>
