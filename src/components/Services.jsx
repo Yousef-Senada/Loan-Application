@@ -9,17 +9,17 @@ const services = [
     {
         img: personalIcon,
         title: "Personal loan",
-        desc: "Personal loans provide<br /> borrowers with flexibility in how they use the funds.",
+        desc: "  Personal loans provide <br />borrowers with flexibility in how they use the funds.",
     },
     {
         img: businessIcon,
         title: "Business loan",
-        desc: "Business Loan Services provide<br/> financial assistance to businesses<br/> for various purposes.",
+        desc: "  Business Loan Services provide<br /> financial assistance to businesses<br /> for various purposes.",
     },
     {
         img: autoIcon,
         title: "Auto loan",
-        desc: "Auto Loan Services provide <br/>financing options for individuals<br/> or businesses to purchase a vehicle.",
+        desc: " Auto Loan Services provide <br />financing options for individuals <br />or businesses to purchase a vehicle..",
     },
 ];
 

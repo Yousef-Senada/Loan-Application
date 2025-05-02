@@ -31,7 +31,6 @@ const slides = [
         desc: "If the borrower meets the bank's lending criteria and passes the credit assessment, the loan is approved. The bank determines the loan amount, interest rate, repayment term, and any associated fees.",
     },
 ];
-
 const HowWeWorks = () => {
     return (
         <section

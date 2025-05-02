@@ -14,19 +14,19 @@ const Hero = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
             >
-                <p className=" text-primary text-7xl font-bold font-Raleway leading-[76px] tracking-wide">
-                    Quick and Easy Loans for Your Financial Needs.
+                <p className="text-primary text-7xl font-bold font-Raleway leading-[76px] tracking-wide">
+                    AI-Powered Loan Approval in Seconds.
                 </p>
                 <p className="w-[592px] text-zinc-700 text-lg tracking-wide">
-                    Our loan services offer a hassle-free and streamlined
-                    borrowing experience, providing you with the funds you need
-                    in a timely manner to meet your financial requirements.
+                    Our AI-driven loan approval system ensures fast, accurate,
+                    and reliable decisions, helping you get the financial
+                    support you need in no time.
                 </p>
                 <button
                     onClick={() => setOpen(true)}
-                    className="w-[134px] h-[48px] rounded-full py-3 px-5 tracking-wide bg-white text-primary border-primary border-2 flex justify-center items-center hover:bg-primary hover:text-white transition-all duration-300"
+                    className="w-[144px] h-[48px] rounded-full py-3 px-5 tracking-wide bg-white text-primary border-primary border-2 flex justify-center items-center hover:bg-primary hover:text-white transition-all duration-300"
                 >
-                    Get started
+                    Get Started
                 </button>
             </motion.div>
 
