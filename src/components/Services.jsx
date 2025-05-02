@@ -19,7 +19,7 @@ const services = [
     {
         img: autoIcon,
         title: "Auto loan",
-        desc: " Auto Loan Services provide <br />financing options for individuals <br />or businesses to purchase a vehicle..",
+        desc: " Auto Loan Services provide <br />financing options for individuals <br />or businesses to purchase a vehicle.",
     },
 ];
 
