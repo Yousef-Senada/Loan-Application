@@ -11,7 +11,7 @@ const Service = ({ img, title, desc }) => {
                 className="text-center text-stone-500 text-lg font-normal font-Poppins tracking-wide"
                 dangerouslySetInnerHTML={{ __html: desc }}
             ></div>
-            <button className="w-[123px] h-10 rounded-full font-DMSans flex text-primary justify-center items-center border-2 border-second/50 tracking-wide">
+            <button className="w-[123px] h-10 rounded-full font-DMSans flex text-primary justify-center items-center border-2 border-second/50 tracking-wide hover:-translate-y-1 hover:scale-105 transition-all duration-300">
                 Apply now
             </button>
         </div>

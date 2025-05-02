@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import heroPhotoIcon from "../assets/heroPhoto.svg";
+import QuestionModal from "./QuestionModal";
 
 const Hero = () => {
+    const [open, setOpen] = useState(false);
     return (
         <section className="py-[128px] px-[98px] h-[676px] flex justify-between font-DMSans">
             <div className="flex flex-col justify-between w-[612px]">
@@ -13,10 +15,14 @@ const Hero = () => {
                     borrowing experience, providing you with the funds you need
                     in a timely manner to meet your financial requirements.
                 </p>
-                <button className="w-[134px] h-[48px] rounded-full py-3 px-5 tracking-wide bg-white text-primary border-primary border-2 flex justify-center items-center">
+                <button
+                    onClick={() => setOpen(true)}
+                    className="w-[134px] h-[48px] rounded-full py-3 px-5 tracking-wide bg-white text-primary border-primary border-2 flex justify-center items-center hover:bg-primary hover:text-white transition-all duration-300"
+                >
                     Get started
                 </button>
             </div>
+            <QuestionModal isOpen={open} onClose={() => setOpen(false)} />
             <div>
                 <img src={heroPhotoIcon} alt="" />
             </div>

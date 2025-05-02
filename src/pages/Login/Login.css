@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
-    --mainColor: #89216b;
+    --mainColor: #1b414b;
     --whiteColor: #ffffff;
     --titleColor: #555555;
     --labelColor: #333333;
 }
 
 .main-container {
-    background: linear-gradient(to right, #da4453, var(--mainColor));
+    background: linear-gradient(to right, #ffffff, #ffffff);
     font-weight: 400;
     min-height: 90vh;
     display: grid;
@@ -21,6 +21,7 @@
     position: relative;
     width: 28rem;
     height: 40rem;
+    padding: 0px 30px;
 }
 
 @media (min-width: 540px) {
@@ -39,12 +40,12 @@
     width: 100%;
     height: 100%;
     background-color: var(--whiteColor);
-    border-radius: 0.5rem;
-    box-shadow: 0 0 1rem 0 rgba(0 0 0 / 0.2);
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem 0 rgba(0 0 0 / 0.12);
 }
 
 .wrapper .form-container form h2 {
-    font-size: 2.4rem;
+    font-size: 2rem;
     text-align: center;
     text-transform: capitalize;
     color: var(--titleColor);
@@ -61,12 +62,12 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 1.28rem;
+    font-size: 1rem;
     text-transform: capitalize;
-    color: var(--labelColor);
+    color: #404040;
     padding: 0 0.4rem;
     pointer-events: none;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 .wrapper .form-container form .form-group i {
@@ -81,11 +82,11 @@
     width: 100%;
     height: 3.2rem;
     padding: 0 0.8rem;
-    border-radius: 0.5rem;
+    border-radius: 0.8rem;
     border: none;
     outline: none;
-    border: 0.1rem solid var(--labelColor);
-    font-size: 1.28rem;
+    border: 0.1rem solid #a1a1a1;
+    font-size: 0.9rem;
     color: var(--labelColor);
     background: transparent;
 }
@@ -99,14 +100,10 @@ form .form-group input:valid ~ i {
     background-color: var(--whiteColor);
 }
 
-.wrapper .form-container form .forgot-pass {
-    margin: -1.7rem 0 1.2rem;
-}
-
-.wrapper .form-container form .forgot-pass a {
+.forgot-pass a {
     color: var(--labelColor);
     text-decoration: none;
-    font-size: 1.12rem;
+    font-size: 1rem;
     text-transform: capitalize;
     transform: all 0.5s ease;
 }
@@ -116,25 +113,27 @@ form .form-group input:valid ~ i {
 }
 
 .wrapper .form-container form .btn {
-    background: linear-gradient(to right, #da4453, var(--mainColor));
+    background: linear-gradient(to right, #2a6877, var(--mainColor));
     color: var(--whiteColor);
     text-transform: capitalize;
     width: 100%;
     height: 3.2rem;
-    font-size: 1.28rem;
+    font-size: 1rem;
     font-weight: 500;
     outline: none;
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     cursor: pointer;
-    box-shadow: 0 0.2rem 1rem rgba(0 0 0 / 0.4);
 }
 
 .wrapper .form-container form .link {
     text-align: center;
-    font-size: 1.12rem;
+    font-size: 1rem;
     color: var(--labelColor);
-    margin: 2rem 0;
+    margin: 2rem 0px;
+}
+.wrapper .form-container form .link p {
+    margin-bottom: 10px;
 }
 
 .wrapper .form-container form .link a {
@@ -143,10 +142,11 @@ form .form-group input:valid ~ i {
     text-decoration: none;
     font-weight: 600;
     transition: all 0.5s ease;
+    margin-left: 5px;
 }
 
 .wrapper .form-container form .link a:hover {
-    color: #da4453;
+    color: #2a6877;
 }
 
 .wrapper .sign-up {

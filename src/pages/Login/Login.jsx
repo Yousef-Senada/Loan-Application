@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Login.css";
-import NavBar from "./../components/NavBar";
+import NavBar from "../../components/NavBar";
 const Login = () => {
     const [mode, setMode] = useState(false);
     return (
@@ -40,14 +40,13 @@ const Login = () => {
                             </button>
                             <div className="link">
                                 <p>
-                                    You already have an account?
+                                    You already have an account ?
                                     <a
                                         className="signin-link cursor-pointer"
                                         onClick={() => {
                                             setMode(false);
                                         }}
                                     >
-                                        {" "}
                                         sign in
                                     </a>
                                 </p>
@@ -67,24 +66,23 @@ const Login = () => {
                                 <i className="fas fa-lock"></i>
                                 <label htmlFor="">password</label>
                             </div>
-                            <div className="forgot-pass">
-                                <a href="#">forgot password?</a>
-                            </div>
                             <button type="submit" className="btn">
                                 login
                             </button>
                             <div className="link">
                                 <p>
-                                    Don't have an account?
+                                    Don't have an account ?
                                     <a
                                         className="signup-link cursor-pointer"
                                         onClick={() => {
                                             setMode(true);
                                         }}
                                     >
-                                        {" "}
                                         sign up
                                     </a>
+                                </p>
+                                <p className="forgot-pass">
+                                    <a href="#">forgot password ?</a>
                                 </p>
                             </div>
                         </form>

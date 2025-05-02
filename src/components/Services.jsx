@@ -33,7 +33,7 @@ const Services = () => {
                     <Service img={s.img} title={s.title} desc={s.desc} />
                 ))}
             </div>
-            <button className="w-[200px] h-[48px] font-DMSans rounded-full flex justify-center items-center bg-second tracking-wide text-white">
+            <button className="w-[200px] h-[48px] font-DMSans rounded-full flex justify-center items-center bg-second tracking-wide text-white hover:scale-105">
                 View more
             </button>
         </section>
