@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
+import { X } from "lucide-react";
 
 const questions = [
     "What is your age?",
@@ -107,10 +108,10 @@ export default function QuestionModal({ isOpen, onClose }) {
                                 Step {step + 1} of {questions.length}
                             </h2>
                             <button
-                                className="text-red-500 hover:text-red-700 font-semibold"
                                 onClick={onClose}
+                                className="text-gray-500 hover:text-red-500 transition-colors"
                             >
-                                Close
+                                <X size={24} />
                             </button>
                         </div>
 
