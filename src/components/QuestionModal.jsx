@@ -2,10 +2,20 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 
 const questions = [
-    "What is your name?",
-    "What is your major?",
-    "What are your hobbies?",
-    "Are you currently working?",
+    "What is your age?",
+    "What is your employment status?",
+    "What is your monthly income?",
+    "What is your credit score?",
+    "Do you have any existing loans?",
+    "What is the total amount of your existing debts?",
+    "What is the loan amount you are requesting?",
+    "What is the purpose of the loan?",
+    "What is your loan term in years?",
+    "Do you have any collateral?",
+    "What is your marital status?",
+    "How many dependents do you have?",
+    "Do you have a savings account?",
+    "Do you have a credit card?",
 ];
 
 export default function QuestionModal({ isOpen, onClose }) {
