@@ -5,7 +5,7 @@ const NavBar = () => {
     return (
         <nav className="h-[10vh] px-[98px] font-DMSans flex justify-between items-center">
             <Link
-                to={"/home"}
+                to={"/"}
                 className="flex justify-start text-3xl font-bold leading-normal tracking-tight w-[175px]"
             >
                 <span className="text-teal-900">Quick</span>
@@ -13,7 +13,7 @@ const NavBar = () => {
             </Link>
             <ul className="flex w-[579px] justify-between">
                 <Link
-                    to={"/home"}
+                    to={"/"}
                     className="text-neutral-600 text-2xl leading-normal tracking-wide"
                 >
                     Home
