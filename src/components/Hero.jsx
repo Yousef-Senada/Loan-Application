@@ -1,12 +1,19 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import heroPhotoIcon from "../assets/heroPhoto.svg";
 import QuestionModal from "./QuestionModal";
 
 const Hero = () => {
     const [open, setOpen] = useState(false);
+
     return (
         <section className="py-[128px] px-[98px] h-[676px] flex justify-between font-DMSans">
-            <div className="flex flex-col justify-between w-[612px]">
+            <motion.div
+                className="flex flex-col justify-between w-[612px]"
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+            >
                 <p className=" text-primary text-7xl font-bold font-Raleway leading-[76px] tracking-wide">
                     Quick and Easy Loans for Your Financial Needs.
                 </p>
@@ -21,11 +28,17 @@ const Hero = () => {
                 >
                     Get started
                 </button>
-            </div>
+            </motion.div>
+
             <QuestionModal isOpen={open} onClose={() => setOpen(false)} />
-            <div>
-                <img src={heroPhotoIcon} alt="" />
-            </div>
+
+            <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+            >
+                <img src={heroPhotoIcon} alt="Hero" />
+            </motion.div>
         </section>
     );
 };

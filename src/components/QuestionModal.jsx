@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion } from "motion/react";
 
 const questions = [
     "What is your name?",
@@ -12,7 +12,7 @@ export default function QuestionModal({ isOpen, onClose }) {
     const [step, setStep] = useState(0);
     const [answers, setAnswers] = useState({});
     const [error, setError] = useState("");
-    const [direction, setDirection] = useState(1); // 1 = forward, -1 = back
+    const [direction, setDirection] = useState(1);
 
     const handleNext = () => {
         if (!answers[step] || answers[step].trim() === "") {

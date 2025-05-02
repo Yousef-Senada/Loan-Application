@@ -34,7 +34,10 @@ const slides = [
 
 const HowWeWorks = () => {
     return (
-        <section className="h-[1662px] px-[158px] flex flex-col justify-evenly">
+        <section
+            id="how-we-work"
+            className="h-[1662px] px-[158px] flex flex-col justify-evenly"
+        >
             <div className="flex flex-col gap-3.5 justify-center items-center">
                 <p className=" text-primary text-4xl font-bold font-Raleway tracking-wide">
                     How we works ?
